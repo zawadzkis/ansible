@@ -1,2 +1,2 @@
 #!/bin/bash
-#sudo apt install apache2 iperf vsftpd
+apt install apache2 iperf vsftpd
