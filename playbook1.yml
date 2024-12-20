@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: apt install
+      ansible.builtin.apt:
+        name:
+          - lldpd
+          - iperf
+          - apache2
+          - vsftpd
+          - tftpd
+          - ufw
