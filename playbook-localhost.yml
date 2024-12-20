@@ -12,6 +12,6 @@
           - tftpd
           - ufw
    
-    - name: inital setup
+    - name: configure ufw
       shell: ufw allow ssh && ufw allow ftp && ufw enable
       
