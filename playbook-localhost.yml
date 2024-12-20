@@ -13,7 +13,5 @@
           - ufw
    
     - name: add user ansible enable ufw allow ssh
-      shell: useradd ansible && ufw enable && ufw allow ssh
-      args:
-        executable: /bin/bash
+      shell: ufw enable && ufw allow ssh
       
