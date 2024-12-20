@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: apt install
+      ansible.builtin.apt:
+        name:
+        - git
+        - htop
+        - vim-nox
+        - lldpd
+        - iperf
