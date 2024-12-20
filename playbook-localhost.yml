@@ -12,8 +12,9 @@
           - tftpd
           - ufw
    
-    - name: enable ufw allow ssh
-      shell:
+    - name: inital setup
+      ansible.builtin.shell:
+        name:
         - ufw allow ssh
         - ufw allow ftp
         - ufw enable
