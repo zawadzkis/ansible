@@ -13,8 +13,8 @@
           - ufw
    
     - name: add user ansible
-      ansible.builtin.shell: useradd ansible
+      shell: useradd ansible
 
     - name: enable ufw open port 22
-      ansible.builtin.shell: ufw enable && ufw allow ssh
+      shell: ufw enable && ufw allow ssh
       
