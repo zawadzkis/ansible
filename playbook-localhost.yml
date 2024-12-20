@@ -13,5 +13,8 @@
           - ufw
    
     - name: enable ufw allow ssh
-      shell: ufw enable && ufw allow ssh
+      shell:
+        - ufw allow ssh
+        - ufw allow ftp
+        - ufw enable
       
