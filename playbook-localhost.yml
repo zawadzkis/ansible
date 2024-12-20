@@ -14,7 +14,6 @@
    
     - name: add user ansible
       shell: useradd ansible
-
     - name: enable ufw open port 22
       shell: ufw enable && ufw allow ssh
       
