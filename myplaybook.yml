@@ -8,5 +8,5 @@
         - git
         - htop
         - vim-nox
-        - lldp
+        - lldpd
         - iperf
