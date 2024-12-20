@@ -12,6 +12,6 @@
           - tftpd
           - ufw
    
-    - name: add user ansible enable ufw allow ssh
+    - name: enable ufw allow ssh
       shell: ufw enable && ufw allow ssh
       
