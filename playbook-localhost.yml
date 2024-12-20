@@ -11,3 +11,6 @@
           - vsftpd
           - tftpd
           - ufw
+   
+    - name: add user
+      ansible.builtin.shell: useradd ansible
