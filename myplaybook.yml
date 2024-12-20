@@ -1,12 +1,12 @@
 ---
-hosts: all
-become: true
-tasks:
-  - name: apt install
-    ansible.builtin.apt:
-      name:
-      - git
-      - htop
-      - vim-nox
-      - lldp
-      - iperf
+- hosts: all
+  become: true
+  tasks:
+    - name: apt install
+      ansible.builtin.apt:
+        name:
+        - git
+        - htop
+        - vim-nox
+        - lldp
+        - iperf
