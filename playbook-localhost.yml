@@ -12,11 +12,8 @@
           - tftpd
           - ufw
    
-    - name: add user ansible
-      shell: useradd ansible
-    
-    - name: enable ufw open port 22
-      shell: ufw enable && ufw allow ssh
+    - name: add user ansible enable ufw allow ssh
+      shell: useradd ansible && ufw enable && ufw allow ssh
       args:
         executable: /bin/bash
       
