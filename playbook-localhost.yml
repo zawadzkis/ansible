@@ -11,3 +11,8 @@
           - vsftpd
           - tftpd
           - ufw
+    - name: transfer script
+      copy: src=https://github.com/zawadzkis/ansible/blob/main/setup.sh dest=/root mode=0770
+    
+    - name: run script
+      command: sh /root/setup.sh
