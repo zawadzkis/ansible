@@ -19,4 +19,4 @@
     
     - name: run script
       ansible.builtin.shell:
-        cmd: cmod u+x /root/setup.sh && bash /root/setup.sh 
+        cmd: chmod u+x /root/setup.sh && bash /root/setup.sh 
