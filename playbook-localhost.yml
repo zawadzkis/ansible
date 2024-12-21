@@ -14,9 +14,9 @@
     
     - name: download script
       ansible.builtin.get_url:
-      url: https://github.com/zawadzkis/ansible/edit/main/setup.sh
-      dest: /root/setup.sh
+        url: https://github.com/zawadzkis/ansible/edit/main/setup.sh
+        dest: /root/setup.sh
     
     - name: run script
       ansible.builtin.shell:
-      cmd: cmod u+x /root/setup.sh && bash /root/setup.sh 
+        cmd: cmod u+x /root/setup.sh && bash /root/setup.sh 
