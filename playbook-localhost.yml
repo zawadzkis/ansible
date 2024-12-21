@@ -11,7 +11,3 @@
           - vsftpd
           - tftpd
           - ufw
-   
-    - name: enable ufw and allow inbound
-      shell: ufw allow ssh && ufw allow ftp && ufw enable
-      
